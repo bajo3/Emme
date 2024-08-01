@@ -1,0 +1,192 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+header {
+    background-color: #F7A5B3; /* Rosa Principal */
+    padding: 20px 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #FFFFFF; /* Blanco */
+    font-weight: 700;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF; /* Blanco */
+    margin: 6px auto;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Blanco */
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: #F06292; /* Rosa Oscuro */
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #F06292; /* Rosa Oscuro */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    padding: 40px 10%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.banner {
+    background: url('https://media.istockphoto.com/id/1085634166/es/foto/foto-de-dama-encantadora-agradable-linda-apuesta-con-de-cerca.jpg?s=612x612&w=0&k=20&c=XPzX65xy2JPaWPNU8FfMMe6bCIvmNvZAzXHoDA5Qj8A=    ') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF; /* Blanco */
+    height: 300px; /* Ajustar altura según preferencia */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para legibilidad del texto */
+    border-radius: 8px;
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nosotros-img {
+    flex: 1;
+}
+
+.nosotros-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.nosotros-info h2 {
+    margin-top: 0;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servicio-info {
+    padding: 10px;
+    background: #FFFFFF; /* Blanco */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-info h3 {
+    margin-top: 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #F06292; /* Rosa Oscuro */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 10px;
+}
