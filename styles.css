@@ -1,14 +1,13 @@
-/* styles.css */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #a18cd1 0%, #f8f8f8 100%);
 }
 
 header {
-    background-color: #F7A5B3; /* Rosa Principal */
+    background-color: #F7A5B3;
     padding: 20px 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -23,7 +22,7 @@ header .container {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #FFFFFF; /* Blanco */
+    color: #FFFFFF;
     font-weight: 700;
 }
 
@@ -43,7 +42,7 @@ nav {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #FFFFFF; /* Blanco */
+    background-color: #FFFFFF;
     margin: 6px auto;
     transition: 0.3s;
 }
@@ -60,25 +59,17 @@ nav {
 
 .menu li a {
     text-decoration: none;
-    color: #FFFFFF; /* Blanco */
+    color: #FFFFFF;
     font-size: 1.2em;
     font-weight: 500;
 }
 
 .menu li a:hover {
-    color: #F06292; /* Rosa Oscuro */
+    color: #F06292;
     text-decoration: underline;
 }
 
-footer {
-    background-color: #F06292; /* Rosa Oscuro */
-    color: #FFFFFF; /* Blanco */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 
 section {
     padding: 40px 10%;
@@ -87,11 +78,11 @@ section {
 }
 
 .banner {
-    background: url('https://media.istockphoto.com/id/1085634166/es/foto/foto-de-dama-encantadora-agradable-linda-apuesta-con-de-cerca.jpg?s=612x612&w=0&k=20&c=XPzX65xy2JPaWPNU8FfMMe6bCIvmNvZAzXHoDA5Qj8A=    ') no-repeat center center;
+    background: url('img/pxfuel.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    color: #FFFFFF; /* Blanco */
-    height: 300px; /* Ajustar altura según preferencia */
+    color: #FFFFFF;
+    height: 50vh;
 }
 
 .banner-content {
@@ -101,7 +92,7 @@ section {
     transform: translateY(-50%);
     max-width: 400px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro para legibilidad del texto */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
@@ -113,6 +104,16 @@ section {
 
 .nosotros-img {
     flex: 1;
+    
+}
+
+.nosotros img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
 }
 
 .nosotros-info {
@@ -140,15 +141,19 @@ section {
 
 .servicio-img img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
 }
 
 .servicio-info {
     padding: 10px;
-    background: #FFFFFF; /* Blanco */
+    background: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
 }
 
 .servicio-info h3 {
@@ -157,9 +162,18 @@ section {
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 10px; /* Espacio entre imágenes */
 }
+
+.galeria img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
 
 .carousel {
     display: flex;
@@ -168,6 +182,7 @@ section {
 }
 
 .carousel img {
+    flex: 0 0 auto;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -184,9 +199,32 @@ section {
     border-radius: 8px;
 }
 
-footer {
-    background-color: #F06292; /* Rosa Oscuro */
-    color: #FFFFFF; /* Blanco */
+#contacto {
     text-align: center;
-    padding: 10px;
+    padding: 40px 10%;
+    background-color: #F7A5B3;
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #FFFFFF;
+}
+
+
+footer {
+    background-color: #F06292;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
